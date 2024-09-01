@@ -56,5 +56,13 @@ const getWeather = () => {
 			warning.textContent = "Wpisz poprawną nazwę miasta.";
 		});
 };
+
+const enterCheck = e => {
+	if (e.keyCode === 13) {
+		getWeather();
+	}
+};
+
 getWeather();
 btn.addEventListener("click", getWeather);
+input.addEventListener("keyup", enterCheck);
