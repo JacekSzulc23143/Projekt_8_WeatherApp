@@ -23,12 +23,14 @@ const getWeather = () => {
 	axios.get($url).then(res => {
 		const temp = res.data.main.temp;
 		const hum = res.data.main.humidity;
+		const status = Object.assign({}, ...res.data.weather);
 
 		cityName.textContent = res.data.name;
+		weather.textContent = status.main;
 		temperature.textContent = Math.floor(temp) + "° C";
 		humidity.textContent = hum + " %";
 
-		console.log(res.data);
+		console.log(status.id);
 	});
 };
 getWeather();
