@@ -261,6 +261,7 @@ button:hover {
 		padding: 9px;
 		margin-left: 18px;
 		font-weight: bold;
+		border-radius: 5px;
 		font-size: 13px;
 	}
 
