@@ -86,11 +86,53 @@ const getWeather = () => {
 			} else if (status.id >= 700 && status.id < 800) {
 				if (status.icon === "50d") {
 					photo.setAttribute("src", "img/50d.png");
+					if (status.id == 701 || status.id == 721 || status.id == 741) {
+						weather.textContent = "Mgła";
+					}
+					if (status.id == 711) {
+						weather.textContent = "Dym";
+					}
+					if (status.id == 731 || status.id == 761) {
+						weather.textContent = "Pył";
+					}
+					if (status.id == 751) {
+						weather.textContent = "Piasek";
+					}
+					if (status.id == 762) {
+						weather.textContent = "Popiół";
+					}
+					if (status.id == 771) {
+						weather.textContent = "Szkwał";
+					}
+					if (status.id == 781) {
+						weather.textContent = "Tornado";
+					}
 				} else {
 					photo.setAttribute("src", "img/50n.png");
+					if (status.id == 701 || status.id == 721 || status.id == 741) {
+						weather.textContent = "Mgła";
+					}
+					if (status.id == 711) {
+						weather.textContent = "Dym";
+					}
+					if (status.id == 731 || status.id == 761) {
+						weather.textContent = "Pył";
+					}
+					if (status.id == 751) {
+						weather.textContent = "Piasek";
+					}
+					if (status.id == 762) {
+						weather.textContent = "Popiół";
+					}
+					if (status.id == 771) {
+						weather.textContent = "Szkwał";
+					}
+					if (status.id == 781) {
+						weather.textContent = "Tornado";
+					}
 				}
 				// photo.setAttribute("src", "img/fog.png");
-				weather.textContent = "Mgła";
+				// weather.textContent = "Mgła";
 			} else if (status.id === 800) {
 				if (status.icon === "01d") {
 					// photo.setAttribute("src", "img/01d.png");
