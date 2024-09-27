@@ -79,6 +79,12 @@ button:hover {
 	height: 100px;
 }
 
+.clouds {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .city-name {
 	font-size: 15px;
 }
@@ -105,7 +111,7 @@ button:hover {
 
 .weather-info {
 	height: 65%;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .photo {
@@ -170,7 +176,7 @@ button:hover {
 	}
 
 	.weather-info {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.photo {
@@ -227,7 +233,7 @@ button:hover {
 	}
 
 	.weather-info {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.photo {
@@ -289,7 +295,7 @@ button:hover {
 	}
 
 	.weather-info {
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.photo {
@@ -347,7 +353,7 @@ button:hover {
 	}
 
 	.weather-info {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	.photo {
