@@ -12,8 +12,10 @@ body {
 	align-items: center;
 	height: 100vh;
 	font-family: "Montserrat", sans-serif;
-	color: rgb(255, 255, 255);
-	background-image: linear-gradient(315deg, #c2118d 0%, #ff503c 74%);
+	/* color: rgb(255, 255, 255); */
+	/* background-image: linear-gradient(315deg, #c2118d 0%, #ff503c 74%); */
+	color: #cad7ff;
+	background-image: linear-gradient(to left top, #4764c7, #6980d6, #899ce4, #a9baf2, #cad7ff);
 	font-size: 10px;
 }
 

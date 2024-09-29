@@ -20,9 +20,16 @@ console.log($now);
 const $hours = $now.getHours();
 const $minutes = $now.getMinutes();
 const $month = $now.getMonth();
+console.log($hours);
 console.log(`Godzina: ${$hours}:${$minutes}`);
 console.log($month);
 console.log(`Miesiąc: ${$month}`);
+
+if ($hours > 7 && $hours < 20) {
+	document.body.style.setProperty("color", "#e6f4f1");
+	document.body.style.backgroundImage =
+		"linear-gradient(to left top, #0072fe, #00a0ff, #00c3f4, #92dee7, #e6f4f1)";
+}
 
 const getWeather = () => {
 	$city = !input.value ? "Gdynia" : input.value;
