@@ -25,7 +25,7 @@ console.log(`Godzina: ${$hours}:${$minutes}`);
 console.log($month);
 console.log(`Miesiąc: ${$month}`);
 
-if ($hours > 7 && $hours < 20) {
+if ($hours >= 7 && $hours <= 18) {
 	document.body.style.setProperty("color", "#e6f4f1");
 	document.body.style.backgroundImage =
 		"linear-gradient(to left top, #0072fe, #00a0ff, #00c3f4, #92dee7, #e6f4f1)";
@@ -169,12 +169,15 @@ const getWeather = () => {
 				// weather.textContent = "Mgła";
 			} else if (status.id == 800) {
 				if (status.icon === "01d") {
-					if (temp > 24 && cloud == 0) {
+					if (temp > 25 && cloud == 0) {
 						photo.setAttribute("src", "img/lampa.png");
-						weather.textContent = "Gorąco";
 					} else {
 						// photo.setAttribute("src", "img/01d.png");
 						photo.setAttribute("src", "img/01dd.png");
+					}
+					if (temp > 30 && cloud == 0) {
+						weather.textContent = "Upał";
+					} else {
 						weather.textContent = "Słonecznie";
 					}
 				} else {
